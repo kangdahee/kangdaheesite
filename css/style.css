@@ -127,3 +127,9 @@ nav {
   color: white;
   text-align: center;
 }
+
+#profile {
+  width: 900px;
+  position: relative;
+  left: 300px;
+}
