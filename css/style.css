@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+
+* {  
+  margin:0;  /* 브라우저 기본 마진 리셋 */
+  padding:0;  /* 브라우저 기본 패딩 리셋 */
+  box-sizing: border-box;  /* 테두리까지 포함해서 박스 모델 너비로 계산 */
+}
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+#container {
+  width:100%;    /* 내용 전체의 너비 */
+  margin:20px auto;  /* 내용을 화면 가운데 배치하도록 좌우 마진을 auto로 */
+}
+#header{
+  width:100%;  /* 부모 요소의 너비와 똑같게 */
+  height:100px;  /* 헤더의 높이 */
+  background-color:#acacac;
+}
+#logo {
+  float: left;
+  width: 300px;
+  height: 100px;
+  line-height: 100px;
+  padding-left: 20px;
+}
+#logo h1 {
+  font-family: 'Nanum Gothic', sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  color: black;
+}
+
+nav {
+  float: right;
+  width: 1000px;
+  height: 100px; 
+  padding-top: 40px;
+}
+
+#topMenu {
+  height: 60px;
+}
+#topMenu > li {
+  float: left;
+  position: relative;
+}
+#topMenu > li > a{
+  display: block;
+  color: #fff;
+  font-weight: 600;
+  text-shadow: 0 1px rgb(39, 40, 41);
+  padding: 20px 60px;
+}
+#topMenu > li > a:hover {
+  color: rgb(37, 35, 35);
+  text-shadow: 0 -1px rgb(39, 40, 41);
+}
+
+#topMenu > li > ul {
+  display: none;
+  position: absolute;
+  width: 160px;
+  background-color: rgba(255, 255, 255, 0.6);
+  left: 45px;
+  margin: 0;
+}
+#topMenu > li > ul > li {
+  padding: 10px 10px 10px 30px;
+}
+#topMenu > li > ul > li > a {
+  font-size: 14px;
+  padding: 10px;
+  color: #000;
+}
+#topMenu > li:hover > ul {
+  display: block;
+  z-index: 10;
+}
+#topMenu > li > ul > li > a:hover {
+  color: gray;
+}
+
+#sidebar{
+  width:25%;  /* 사이드바의 너비 */
+  height:600px;  /* 사이드바의 높이 */
+  background-color:#e9e9e9;
+  float:left;  /* 왼쪽으로 플로팅 */
+  text-align: center;
+}
+
+#slideShow {
+  width: 75%;
+  height: 600px;
+  overflow: hidden;
+  position: relative;
+}
+#slides {
+  position: absolute;
+}
+#slides > img {
+  width: 75%;
+  height: 600px;
+  float: left;
+}
+
+#contents {
+  width:100%;  /* 본문의 너비 */
+  height:600px;  /* 본문의 높이 */
+  background-color:#f7f7f7;
+  float:left;  /* 왼쪽으로 플로팅 */
+}
+
+
+#footer {
+  width:100%;  /* 부모 요소의 너비와 똑같게  */
+  height:100px;  /* 푸터의 높이 */
+  background-color:#888888;
+  clear:left;  /* 플로팅 해제 */
+  padding: 40px;
+  margin: 20px auto;
+  color: white;
+  text-align: center;
+}
