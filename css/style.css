@@ -133,3 +133,7 @@ nav {
   position: relative;
   left: 300px;
 }
+
+@media screen and (min-device-width: 375px) and (min-device-height: 812px) {
+  
+}
